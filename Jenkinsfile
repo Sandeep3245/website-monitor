@@ -6,7 +6,7 @@ pipeline {
      stages {
             stage('monitor') {
                 steps {
-                    bat '"C:\\Program Files\\Git\\bin\\bash.exe "chmod +x monitor.sh && ./monitor.sh"'
+                    bat '"C:\\Program Files\\Git\\bin\\bash.exe " -c "chmod +x monitor.sh && ./monitor.sh"'
                 }
             }
      }
